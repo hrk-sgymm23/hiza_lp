@@ -16,7 +16,7 @@ const notes: NoteItem[] = [
   {
     title: "Music Festival",
     description:
-      "フェスやライブによく行きます。写真が去年のフジロックです。",
+      "フェスやライブによく行きます。写真は去年のフジロックです。",
     image: "/images/notes/fujirock.jpg",
   },
   {
