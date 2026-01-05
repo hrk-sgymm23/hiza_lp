@@ -1,0 +1,9 @@
+services:
+  hiza-lp:
+    image: node:20.11.0
+    working_dir: /app
+    volumes:
+      - ./hiza-lp:/app
+    ports:
+      - "3004:3000"
+    command: npm run dev
