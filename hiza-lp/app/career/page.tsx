@@ -35,12 +35,35 @@ export default function CareerPage() {
     "BigQuery",
     "Terraform"
   ]
+
+  const uganda_app = [
+    "Python",
+    "Flask",
+    "Vue.js",
+    "TypeScript",
+    "Google Cloud Platform",
+    "Cloud Run",
+    "Firestore",
+    "Firebase Authentication",
+    "Terraform"
+  ]
   
   const valops = [
     "Python",
     "PowerBI",
     "DataBricks",
     "Azure Storage"
+  ]
+
+  const kit = [
+    "Swift",
+    "ARKit",
+    "Firebase",
+    "React",
+    "TypeScript",
+    "Next.js",
+    "Vercel",
+    "GitHub Actions"
   ]
 
   const TagList = ({ stacks }: TagListProps) => (
@@ -126,7 +149,18 @@ export default function CareerPage() {
           />
 
           <Project
-            title="大手バイクメーカーデータ基盤 設計/構築/運用"
+            title="大手バイクメーカー バイク管理アプリケーション 設計/構築/運用"
+            period="2023/7 ~ 2025/5"
+            stacks={uganda_app}
+          >
+            データ基盤にて収集している車体自体を管理するアプリケーションの設計~運用まで一貫して行った。
+            当プロジェクトにてFlaskを用いたWebアプリケーションの開発経験を身につけた。またGoogleCloudによるサーバーレスアーキテクチャの理解を深めた。
+          </Project>
+
+          <div className="my-8 h-px bg-neutral-200" />
+
+          <Project
+            title="大手バイクメーカー データ基盤 設計/構築/運用"
             period="2023/7 ~ 2025/5"
             stacks={uganda}
           >
@@ -147,6 +181,28 @@ export default function CareerPage() {
             当プロジェクトにてウェブアプリケーションの基礎また、アジャイルへの理解を深めた。
           </Project>
         </section>
+
+        {/* KIT */}
+        <section className="rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 shadow-sm">
+          <CompanyHeader
+            title="金沢工業大学 出原研究室"
+            period="2021/5 ~ 2022/3"
+            role="Software Engineer / Mobile Developer"
+          />
+
+          <Project
+            title="学生用アプリケーション 「知の共創キャンパス」の開発"
+            period="2021/5 ~ 2022/3"
+            stacks={kit}
+          >
+            今まで所属した学生が作成した卒論をアプリケーションのAR上で閲覧できるようにするアプリケーション「知の共創キャンパス」をゼミメンバー3人で構築。
+            構成としてはネイティブアプリのクライアントサイドにSwift,管理画面はNext.jsで実装。バックエンドはFirebaseを利用した。
+            私は主にiOSアプリケーションの開発を担当し、SwiftやARKitを用いてARコンテンツの表示機能を実装した。
+          </Project>
+
+          
+        </section>
+
       </div>
     </main>
   );
