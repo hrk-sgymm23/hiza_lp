@@ -57,7 +57,7 @@ export default function AboutMePage() {
       </ul>
 
       <h2 className="text-3xl font-semibold mb-12 text-neutral-700">Tech Stack</h2>
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap gap-4 mb-12">
         {stacks.map((stack) => (
           <span
             key={stack}
@@ -67,6 +67,14 @@ export default function AboutMePage() {
           </span>
         ))}
       </div>
+
+      <h2 className="text-3xl font-semibold mb-12 text-neutral-700">Certifications</h2>
+      <ul className="list-disc list-inside mb-12 space-y-2 text-neutral-500">
+        <li>AWS Certified Solutions Architect – Associate</li>
+        <li>AWS Certified SysOps Administrator – Associate</li>
+        <li>AWS Certified Developer – Associate</li>
+        <li>AWS Certified Solutions Architect – Professional</li>
+      </ul>
     </main>
   );
 }
