@@ -59,12 +59,12 @@ export default function RootLayout({
             <p className="text-sm text-neutral-400 mb-4">Links</p>
             <div className="flex gap-6 text-sm">
               <a
-                href="https://x.com/wvvvn6j?s=21"
+                href="https://github.com/hrk-sgymm23"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-400 hover:text-white transition"
               >
-                X →
+                GitHub →
               </a>
               <a
                 href="https://zenn.dev/hrk_sgyumm23"
@@ -89,6 +89,14 @@ export default function RootLayout({
                 className="text-neutral-400 hover:text-white transition"
               >
                 Strava →
+              </a>
+                            <a
+                href="https://x.com/wvvvn6j?s=21"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-neutral-400 hover:text-white transition"
+              >
+                X →
               </a>
             </div>
 
